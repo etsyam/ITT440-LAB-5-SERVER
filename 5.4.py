@@ -18,10 +18,10 @@ while True:
     print("Dapat capaian dari: "+str(addr))
     c.send(b'Terima Kasih!')
     
-    buffer = c.recv(1024)
-    while buffer:
-        file.write(buffer)
-        buffer = c.recv(1024)
+    RecvFile = c.recv(1024)
+    while RecvFile:
+        file.write(RecvFile)
+        RecvFile = c.recv(1024)
     file.close()
     print("\n File berjaya di copy \n")
 

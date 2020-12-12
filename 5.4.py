@@ -11,7 +11,7 @@ print("Berjaya bind socket di port: "+str(port))
 s.listen(5)
 print("Socket tengah menunggu client!")
 
-file = open("file.txt","wb") #Nama file yang di copy mula dengan file_ + no. file
+file = open("file.txt","wb") 
 
 while True:
     c, addr = s.accept()
